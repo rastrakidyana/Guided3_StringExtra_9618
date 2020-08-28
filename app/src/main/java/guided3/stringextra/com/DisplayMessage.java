@@ -18,13 +18,13 @@ public class DisplayMessage extends AppCompatActivity {
         textView.setTextSize(40);
         textView.setText("Anda memilih warna "+ message);
 
-        if (message=="Merah"){
+        if (message.equals("Merah")){
             textView.setTextColor(Color.parseColor("#FF0000"));
         }
-        else if(message=="Hijau"){
+        else if(message.equals("Hijau")){
             textView.setTextColor(Color.parseColor("#00FF00"));
         }
-        else if(message=="Biru"){
+        else if(message.equals("Biru")){
             textView.setTextColor(Color.parseColor("#0000FF"));
         }
         setContentView(textView);
